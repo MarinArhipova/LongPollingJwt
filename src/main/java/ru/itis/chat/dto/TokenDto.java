@@ -7,9 +7,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class MessageDto {
-    private String author;
-    private String text;
+@NoArgsConstructor
+public class TokenDto {
+    private String token;
 }

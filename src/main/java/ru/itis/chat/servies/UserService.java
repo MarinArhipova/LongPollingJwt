@@ -1,6 +1,7 @@
 package ru.itis.chat.servies;
 
 import org.springframework.security.core.Authentication;
+import ru.itis.chat.dto.TokenDto;
 import ru.itis.chat.forms.UserForm;
 import ru.itis.chat.model.User;
 
@@ -12,4 +13,5 @@ public interface UserService {
     User getCurrentUser(Authentication authentication);
     Optional<User> findByUsername(String username);
     List<User> getAll();
+    TokenDto signIn(UserForm userForm);
 }
